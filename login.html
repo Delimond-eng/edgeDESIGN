@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from easetemplate.com/borrow/pages/landing-page-car-loan.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Oct 2022 20:29:07 GMT -->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Bootstrap 5 Template">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.html">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.html">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.html">
+
+
+    <!-- Libs CSS -->
+
+    <link rel="stylesheet" href="assets/libs/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/libs/tiny-slider/dist/tiny-slider.css">
+    <link rel="stylesheet" href="assets/libs/nouislider/dist/nouislider.min.css">
+    <link rel="stylesheet" href="assets/fonts/flat-font-icons/css/flaticon.css">
+    <link rel="stylesheet" href="assets/fonts/fontello-icons/fontello.css">
+    <link rel="stylesheet" href="assets/libs/magnific-popup/dist/magnific-popup.css">
+    <link rel="stylesheet" href="assets/libs/jquery-ui/themes/base/all.css">
+    <link rel="stylesheet" href="assets/libs/jquery-ui/demos/demos.css">
+    <link rel="stylesheet" href="assets/libs/magnific-popup/dist/magnific-popup.css">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="assets/css/theme.min.css">
+    <title>Login pages</title>
+</head>
+
+<body>
+    <div class=" d-flex align-items-center justify-content-center"
+        style="background: linear-gradient(rgba(20, 30, 40, 0.7), rgba(20, 30, 40, 0.7)),
+    rgba(20, 30, 40, 0.7) url(assets/images/bg_1.jpg) no-repeat center;  background-size: cover; background-position: center; overflow: hidden; height: 100vh; width: 100%;">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-center">
+                
+                <div class="col-xl-5 col-lg-5 col-md-6  col-sm-12 col-12">
+                    <div class="card shadow-lg">
+                        <div class="card-body">
+                            <img src="assets/images/logos/logo_color.svg" class="mb-3" style="width:180px" title="logo">
+                            <p>Veuillez vous connecter à votre compte ! </p>
+                            <form method="post" id="form-login" novalidate>
+                                <!-- Text input-->
+                                <div class="mb-3">
+                                    <label class="form-label sr-only" for="identifiant">Email ou Téléphone</label>
+                                    <input id="identifiant" name="identifiant" type="text" placeholder="Email ou téléphone..." class="form-control" 
+                                        required>
+                                        <div class="invalid-feedback">
+                                            Email ou téléphone requis !
+                                        </div>
+                                </div>
+                                <!-- Text input-->
+                                <div class="mb-3">
+                                    <label class="form-label sr-only" for="pass">Mot de passe</label>
+                                    <input id="email" name="email" type="text" placeholder="Mot de passe ..."
+                                        class="form-control" required>
+                                        <div class="invalid-feedback">
+                                            Mot de passe requis !
+                                        </div>
+                                </div>
+                                
+                                <div class="mb-3 mb-0 d-grid">
+                                    <button type="submit" class="btn text-white border-0 bg-app"><i class="fas fa-unlock"></i> Connecter</button>
+                                </div>
+                                <p class="text-center">Vous n'avez pas un compte ? <a class="link-success" href="register.html">créez un compte !</a></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        (() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('#form-login')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+      form.classList.add('was-validated')
+    }, false)
+  })
+})();
+    </script>
+</body>
+
+</html>
